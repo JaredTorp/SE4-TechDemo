@@ -2,7 +2,7 @@ package TechDemoPD;
 
 import java.util.Scanner;
 
-public class Main {
+public class Calculator {
 
 	public static void main(String[] args) {
 		//our calculator program
@@ -31,6 +31,10 @@ public class Main {
 		{
 			result = Integer.parseInt(words[1]) * Integer.parseInt(words[2]);
 		}
+		else if (words[0].contentEquals("/"))
+		{
+			result = Integer.parseInt(words[1]) / Integer.parseInt(words[2]);
+		}
 		else 
 		{
 			System.out.println("ERROR, wrong input");
@@ -39,10 +43,7 @@ public class Main {
 		System.out.println("Your result: " + result);
 		
 		//our feature we need to implement
-//		else if (words[0].contentEquals("/"))
-//		{
-//			result = Integer.parseInt(words[1]) / Integer.parseInt(words[2]);
-//		}
+
 		
 
 	}
